@@ -1,0 +1,53 @@
+转到命令行，
+切到这个目录,
+执行下面的命令：sina_blog_downloader.py -i sina_user_id.txt -o output
+如下：
+
+
+A:\>sina_blog_downloader.py -h
+
+    downloading mircoblogs from weibo.com,written by @medcl,url:http://log.medcl
+.net;
+    -------------------------------------------------------
+    usage:
+        rss_downloader.py [-i file_of_sina_user_id] [-o output_folder] [-c num_o
+f_threads] [-x num_of_sub_folder]
+
+    example:
+        rss_downloader.py -i sina_userId -o data -c 15 -x 20  -k 100  -s on
+
+    -i      the location of input file which containing the sina userid
+    -o      the folder where the downloading files will be stored
+    -c      number of the working threads,these threads will working concurrentl
+y
+    -x      specify the number of the sub-folder,calculated by userid % num_of_s
+ubfolder
+    -k      skip_count
+    -h      show help.
+    -s      [on] [off] shutdown after download finished.
+
+
+A:\>sina_blog_downloader.py -i sina_user_id.txt -o output
+starting: Thu Feb 16 10:36:32 2012
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+thread:2,count:2,file:output/02-16/3/1685484143.json
+thread:3,count:3,file:output/02-16/15/1400935015.json
+thread:4,count:4,file:output/02-16/1/1140437381.json
+thread:1,count:1,file:output/02-16/11/1000112131.json
+finished: Thu Feb 16 10:36:32 2012
+
+A:\>
